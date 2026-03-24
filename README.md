@@ -1,0 +1,2 @@
+# .github
+Kindling org profile
