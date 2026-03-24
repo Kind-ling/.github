@@ -1,10 +1,6 @@
 # Kindling
 
-> Open infrastructure for the agent economy.
-
-Kindling is the optimization layer that makes agents choose your service.
-Not a payment tool. Not an identity standard. Not a discovery index.
-Those exist. Kindling makes them work better for you.
+> Kindling is the SEO platform for the agent economy. We help agent services get discovered, selected, and chosen by the autonomous systems that are now the buyers.
 
 ---
 
@@ -12,21 +8,23 @@ Those exist. Kindling makes them work better for you.
 
 | Product | What it does | Status |
 |---------|-------------|--------|
-| [**Twig**](https://github.com/Kind-ling/twig) | Optimize MCP tool descriptions + A2A Agent Cards for agent discovery. 15% of measured x402 revenue increase. Pay nothing if it doesn't work. | 🟠 Building |
-| [**Flint**](https://github.com/Kind-ling/flint) | Agent social growth engine. Analyze, optimize, schedule, and track on Moltbook. | 🟢 Private beta |
-| [**Igniter**](https://github.com/Kind-ling/igniter) | x402 + MCP + A2A scaffolding for any agent service | 🟡 Repositioning |
+| [**Twig**](https://github.com/Kind-ling/twig) | Audit and optimize MCP descriptions + A2A Agent Cards for agent discovery. Continuous monitoring. Free audit. Paid monitoring. | 🟢 Live |
+| [**Flint**](https://github.com/Kind-ling/flint) | Growth engine for agent social platforms (Moltbook). Analyze, optimize, schedule, track. | 🟠 Private beta |
+| [**Igniter**](https://github.com/Kind-ling/igniter) | x402 + MCP + A2A scaffolding for any agent service. Compatible with MCPay. | 🟡 Ecosystem tool |
 | [**Docs**](https://github.com/Kind-ling/docs) | Governance, economics, methodology | 🟢 Live |
 | [**Brand**](https://github.com/Kind-ling/brand) | Design tokens, logos, typography | 🟢 Live |
 
 ---
 
-## The Family
+## Agent SEO — the full suite
 
-- **Twig** sharpens how agents see you — descriptions + Agent Cards optimized for selection
-- **Flint** ignites agent attention — Moltbook growth engine, posting and engagement at scale
-- **Igniter** scaffolds the plumbing — x402, MCP, and A2A in one package
+- **Twig** audits and optimizes how agents *see* your service — descriptions, Agent Cards, registry presence
+- **Flint** builds your visibility on agent social platforms — Moltbook growth, content optimization, scheduling
+- **Igniter** scaffolds the infrastructure your service runs on — x402, MCP, A2A in one package
 
-Kindling doesn't compete with payment rails (MCPay), identity standards (ERC-8004), or discovery indexes (x402-discovery). We compose with all of them. Kindling is the layer between "indexed" and "chosen."
+Kindling doesn't rebuild payments ([MCPay](https://mcpay.tech)), identity ([ERC-8004](https://eips.ethereum.org/EIPS/eip-8004)), or discovery indexes ([x402-discovery](https://x402-discovery.rplryan.workers.dev/services)). We're the optimization layer on top.
+
+Everyone else helps you *exist*. Kindling helps you get *chosen*.
 
 ---
 
@@ -34,27 +32,29 @@ Kindling doesn't compete with payment rails (MCPay), identity standards (ERC-800
 
 Every MCP tool has a description. That description is what an LLM reads when deciding whether to call your service. It's the only signal between **selected** and **skipped**.
 
-Most descriptions are garbage.
+```
+exa/answer       →  "AI-powered answer"            ← F (28/100)
+wordspace/invoke →  "Run wordspace AI agent loop"  ← F (31/100)
+jupiter/portfolio → "Wallet portfolio positions"   ← D (42/100)
+```
 
-| Tool | Current description |
-|------|---------------------|
-| `exa/answer` | "AI-powered answer" |
-| `wordspace/invoke` | "Run wordspace AI agent loop" |
-| `jupiter/portfolio` | "Wallet portfolio positions" |
+These tools are useful. Their descriptions are not.
 
-These tools are useful. Their descriptions are not. Kindling fixes that.
+```bash
+npx @kindling/twig analyze https://myservice.com/.well-known/agent.json
+```
 
 ---
 
 ## Principles
 
-- Measure everything. Revenue claims are verified on-chain.
-- No single composite score. Dimensions stay separate and auditable.
-- Referral splits can't influence rankings. Hard rule, enforced in code.
-- Methodology changes require 7-day public notice before enforcement.
-- Pay nothing if it doesn't work.
+- Measure everything on-chain. Revenue claims are verifiable.
+- No composite scores that hide dimension trade-offs.
+- Referral splits can't influence rankings — enforced in code.
+- Methodology changes require 7-day public notice.
+- Free audit, always. Pay only for monitoring and intelligence.
 
-→ [Full governance and methodology docs](https://github.com/Kind-ling/docs)
+→ [Governance and methodology](https://github.com/Kind-ling/docs)
 
 ---
 
